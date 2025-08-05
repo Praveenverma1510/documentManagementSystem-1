@@ -1,70 +1,92 @@
-# Getting Started with Create React App
+# Document Management System - Frontend Assignment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This project is a frontend implementation of a Document Management System (DMS) built with React. The system allows users to upload, tag, search, preview, and download documents with a responsive interface.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- User authentication via OTP
+- Admin interface for user creation
+- Document upload with:
+  - Date picker
+  - Category selection (Personal/Professional)
+  - Dynamic dropdowns for names/departments
+  - Tag management
+  - File type restrictions (PDF/Images only)
+- Document search with filters
+- File preview and download functionality
+- Responsive design
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies Used
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- React
+- Bootstrap
+- State management
 
-### `npm test`
+## Setup Instructions
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
 
-### `npm run build`
+- npm
+- React
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   git clone https://github.com/Nikita2702/documentManagementSystem.git
+   ```
 
-### `npm run eject`
+2. Navigate to the project directory:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```bash
+   cd documentManagementSystem
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Install dependencies:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4. Configure environment variables:
+   - Create a `.env` file based on `.env.example`
+   - Add your API endpoints and any other required configurations
 
-## Learn More
+### Running the Application
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm start
+# or
+ng serve
+# or
+yarn start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The application will be available at `http://localhost:4200` (or appropriate port).
 
-### Code Splitting
+## API Integration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The application uses the following API endpoints (from the provided Postman collection):
 
-### Analyzing the Bundle Size
+- OTP generation: `/api/auth/otp`
+- OTP validation: `/api/auth/validate`
+- [List other key endpoints used]
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Testing
 
-### Making a Progressive Web App
+To run unit tests:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```bash
+npm test
+```
 
-### Advanced Configuration
+## Development Approach
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Components were developed incrementally with frequent Git commits
+- State management implemented.
+- Responsive design achieved with Bootstrap
