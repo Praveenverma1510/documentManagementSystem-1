@@ -301,7 +301,6 @@ export const UploadDocument = () => {
                             </div>
                         </div>
 
-                        {/* Right Column - Metadata */}
                         <div className="col-lg-6">
                             <div className="upload-section">
                                 <h5 className="section-title">Document Information</h5>
