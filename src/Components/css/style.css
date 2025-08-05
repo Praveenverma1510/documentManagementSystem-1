@@ -1,0 +1,149 @@
+/* body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+   
+    text-align: center;
+    height: 60vh;
+    box-shadow: 0 0.2rem 3rem rgba(0,0,0,0.2);
+    border-radius: 0.5rem;
+    background-color: #a5bbdd;
+    width: 250px;
+    position: relative;
+    overflow: hidden;
+    transform: translate3d(0,0,0);
+    min-width: 20rem;
+    max-width: 35rem;
+}
+.wave{
+    opacity: 0.3;
+    position: absolute;
+    top: 120%;
+    left:50%;
+    background-color: white;
+    width: 50rem;
+    height: 50rem;
+    margin-left: -25rem;
+    margin-top: -25rem;
+    border-radius: 43%;
+    animation: drift 3000ms infinite linear;
+    transform-origin: 50% 48%;
+    z-index: 1;
+}
+html,body{
+    height: 100%;
+    font-size: 62.5%;
+}
+html{
+    background-color: #eee;
+}
+#date {
+    margin-top: 0.5rem;
+    color: #57606f;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.wave .-three{
+    animation: drift 5000ms;
+    z-index: 2 !important;
+    opacity: 0.2;
+}
+.wave .-two{
+    animation: drift 7000ms;
+    z-index: 3 !important;
+    opacity: 0.1;
+}
+.temp{
+    font-size: 3rem;
+    margin-top: 2.5rem;
+}
+.box:after{
+    content: "";
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 11;
+    transform: translate3d(0,0,0);
+}
+.inputField{
+   margin-top: 40px;
+   height: 40px;
+   width:65%;
+   border-radius: 20px;
+   border: none;
+   
+}
+#para{
+    text-align: center;
+    font-size: 20px;
+
+}
+@keyframes drift {
+    from{
+        transform: rotate(0deg);
+    }
+    from{
+        transform: rotate(0360deg);
+    }
+}
+.minmax{
+    margin-top: 0.2rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #57606f;
+}
+#condition{
+    height: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#condition .fas{
+    font-size: 6rem;
+    animation: fas-anime 3s linear infinite alternate;
+}
+
+@keyframes fas-anime{
+    from{
+        transform: scale(0.8);
+    }
+    to{
+        transform: scale(1.5);
+    }
+}
+#condition h2{
+    font-size: 32px;
+}
+.info{
+    position: absolute;
+    bottom: 0;
+    height: 460;
+    width: 100%;
+    z-index: 4;
+}
+.location{
+    margin-top: 1.5rem;
+    text-align: center;
+    font-weight: 300;
+    font-size:35px;
+
+}
+.fa-street-view{
+    animation: rotates 3s linear infinite alternate;
+}
+
+@keyframes rotates {
+    from{
+        transform: translateX(-0.5rem);
+
+    }
+    to{
+        transform:translateX(0.5rem);
+    }
+}
+ */
